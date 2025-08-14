@@ -1,1 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 @import "tailwindcss";
+
+@theme{
+    --default-font-family: 'Poppins', sans-serif;
+    --color-red: #f45654;
+    --color-dark: #425147;
+    --color-rich-black: #18251c;
+    --bg-rich-black: #18251c;
+}
+
+@layer base {
+    html {
+        @apply scroll-smooth overflow-x-hidden;
+    }
+
+    body {
+        @apply antialiased overflow-x-hidden;
+    }
+}
+
+@layer utilities {
+    .main-container {
+        @apply max-w-[1440px] mx-auto px-5 md:px-[32px] lg:px-[70px];
+    }
+}
+
+@layer components{
+
+    .nav-links{
+        @apply relative text-dark hover:text-red after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-6 after:bg-red-500 after:opacity-0 hover:after:opacity-100 after:transition-opacity after:duration-300;
+    }
+  
+    .btn-common {
+         @apply inline-block rounded-xl font-bold text-base px-5 md:px-8 py-3 md:py-4
+        transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]
+        hover:shadow-md hover:-translate-y-2;
+    }
+    .primary-btn {
+        @apply text-white 
+        bg-gradient-to-r from-[#F35255] to-[#FEBF40]
+        hover:bg-gradient-to-r hover:from-[#FEBF40] hover:to-[#F35255];
+    }
+    .secondary-btn {
+        @apply bg-transparent border-2 border-[#B0B0B0] text-[#425147]
+        hover:bg-[#F45654] hover:text-white hover:border-[#F45654];
+    }
+    .card-gradient{
+        @apply relative rounded-2xl duration-300 hover:shadow-lg h-full overflow-hidden bg-[linear-gradient(357.68deg,_#F3525540_1.77%,_#0000001F_97.88%)];
+    }
+    .card-overlay{
+        @apply absolute inset-0 flex items-end px-12 py-12 z-10 group-hover:opacity-0 opacity-100;
+    }
+    .card-hover-overlay{
+        @apply bg-[linear-gradient(357.68deg,_#F35255_1.77%,_#FEBF4033_97.88%)] absolute inset-0 opacity-0 group-hover:opacity-95 transition-opacity duration-300 z-10 text-center md:text-left;
+    }
+    .footer-nav-links{
+        @apply text-[#B0B0B0] text-lg hover:text-yellow-500 duration-500;
+    }
+    .text-h1 {
+        @apply text-2xl md:text-4xl lg:text-6xl;
+    }
+
+    .text-h2 {
+        @apply text-xl sm:text-3xl md:text-4xl lg:text-5xl;
+    }
+    .text-h3{
+        @apply text-2xl md:text-3xl lg:text-4xl;
+    }
+    .text-h4{
+        @apply text-xl sm:text-xl md:text-2xl;
+    }
+
+
+}
