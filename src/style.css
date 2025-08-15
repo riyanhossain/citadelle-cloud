@@ -2,6 +2,7 @@
 
 
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @theme{
     --default-font-family: 'Poppins', sans-serif;
