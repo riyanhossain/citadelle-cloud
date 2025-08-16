@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Citadekke-Cloud</title>
     </head>
-    <body>
+    <body class="text-dark text-base">
       <!-- header -->
       <header 
           x-data="{ scrolled: false, menuOpen: false }" 
@@ -77,7 +77,7 @@
                   <li><a href="#propos" class="nav-links">A propos</a></li>
                   <li><a href="#solutions" class="nav-links">Solutions</a></li>
                   <li><a href="#fonctionnalités" class="nav-links">Fonctionnalités</a></li>
-                  <a href="#" class="primary-btn btn-common">Nous contacter</a>
+                  <a href="#" class="primary-btn btn-common max-w-max">Nous contacter</a>
               </ul>
           </div>
       </header>
@@ -107,7 +107,7 @@
                 </div>
               </div>
             </div>
-            <img src="/images/home_hero-bg.webp" alt="Background Image" class="absolute inset-0 w-full h-full object-cover z-[-1]"/>
+            <img src="/images/home_hero-bg.webp" alt="Background Image" class="absolute inset-0 size-full object-cover -z-10"/>
         </section>
         <!-- -->
         <section class="py-8 md:py-16">
@@ -116,14 +116,14 @@
                 <h6 class="text-center text-base sm:text-lg text-rich-black font-medium max-w-[750px]">Nous fournissons de l´aide et une solution adaptée pour tous les appareils executant ces systèmes d´exploitation :</h6>
               </div>
               <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-[900px] m-auto items-center">
-                <div class="bg-white rounded-2xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.25)] px-8 py-6">
-                  <img src="/icon/icon-1.PNG" class="h-auto m-auto" alt="icon-1"/>
+                <div class="bg-white rounded-3xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.25)] px-8 py-6">
+                  <img src="/icon/icon-1.PNG" class="w-[50px] h-[50px] md:w-[100px] md:h-[100px] m-auto" alt="icon-1"/>
                 </div>
-                <div class="bg-white rounded-2xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.25)] px-8 py-6">
-                  <img src="/icon/icon-2.PNG" class="h-auto m-auto" alt="icon-1"/>
+                <div class="bg-white rounded-3xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.25)] px-8 py-6">
+                  <img src="/icon/icon-2.PNG" class="w-[50px] h-[50px] md:w-[100px] md:h-[100px] m-auto" alt="icon-1"/>
                 </div>
-                <div class="bg-white rounded-2xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.25)] px-8 py-6">
-                  <img src="/icon/icon-3.PNG" class="h-auto m-auto" alt="icon-1"/>
+                <div class="bg-white rounded-3xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.25)] px-8 py-6">
+                  <img src="/icon/icon-3.PNG" class="w-[50px] h-[50px] md:w-[100px] md:h-[100px] m-auto" alt="icon-1"/>
                 </div>
               </div>
            </div>
@@ -139,9 +139,9 @@
                   <div class="space-y-4 md:space-y-8 text-center md:text-start">
                     <h4 class="text-h4 font-semibold text-red">Solution Cloud</h4>
                     <h2 class="text-h2 font-semibold text-rich-black leading-tight">La confidentialité de vos données numériques est notre priorité.</h2>
-                    <p class="text-dark text-base">MySafeSecurity vous propose une solution Cloud pour accèder à vos fichiers personnels ou à votre travail, où que vous soyez géographiquement dans le monde et sans perdre votre environnement de bureau.</p>
-                    <p class="text-dark text-base">En bénéficiant de notre Assistance à distance, nos techniciens certifiés se feront un plaisir de répondre à vos questions et de résoudre vos problèmes qu’ils soient anodins ou sérieux.</p>
-                    <a href="#" class="primary-btn btn-common uppercase md:absolute">Nous contacter</a>
+                    <p>MySafeSecurity vous propose une solution Cloud pour accèder à vos fichiers personnels ou à votre travail, où que vous soyez géographiquement dans le monde et sans perdre votre environnement de bureau.</p>
+                    <p>En bénéficiant de notre Assistance à distance, nos techniciens certifiés se feront un plaisir de répondre à vos questions et de résoudre vos problèmes qu’ils soient anodins ou sérieux.</p>
+                    <a href="#" class="primary-btn btn-common uppercase">Nous contacter</a>
                   </div>
                </div> 
 
@@ -252,10 +252,10 @@
                <h2 class="text-h2 font-bold text-white text-center mb-8 md:mb-16">Nos Formules</h2>
               <div class="grid grid-cols-1 md:grid-cols-3 gap-6 -mb-[360px]">
                 <div class="bg-white text-center rounded-t-2xl rounded-b-2xl shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] h-full 
-                overflow-hidden relative hover:-translate-y-2 duration-500">
+                overflow-hidden relative hover:-translate-y-2 duration-500 max-w-[500px]">
                   <!-- price header-->
                   <div class="py-3 bg-rich-black rounded-t-2xl">
-                    <h6 class="text-lg text-white font-semibold">Serveur Cloud S</h6>
+                    <h6 class="text-xl text-white font-semibold">Serveur Cloud S</h6>
                   </div>
                   <!-- price body-->
                   <div class="py-6 md:py-12 px-5">
@@ -263,21 +263,21 @@
                         <h3 class="text-h3 font-bold text-rich-black">33.31€ /mois</h3>
                         <div>
                           <p class="text-lg md:text-xl text-dark font-medium">36 mois pour 1349.00€ HT</p>
-                          <span class="text-lg text-red underline">+ 24 mois offerts</span>
+                          <span class="text-base text-red underline">+ 24 mois offerts</span>
                         </div>
                       </div>
                       <div class="space-y-3 border-b border-[#D9D9D9] py-5 md:py-10">
                         <h3 class="text-h3 font-bold text-rich-black">39.54€ /mois</h3>
                         <div>
                           <p class="text-lg md:text-xl text-dark font-medium">24 mois pour 949.00€ HT</p>
-                          <span class="text-lg text-red underline">+ 12 mois offerts</span>
+                          <span class="text-base text-red underline">+ 12 mois offerts</span>
                         </div>
                       </div>
                       <div class="space-y-3 border-b border-[#D9D9D9] py-5 md:py-10">
                         <h3 class="text-h3 font-bold text-rich-black">58.25€ /mois</h3>
                         <div>
                           <p class="text-lg md:text-xl text-dark font-medium">12 mois pour 699.00€ HT</p>
-                          <span class="text-lg text-red underline">+ 3 mois offerts</span>
+                          <span class="text-base text-red underline">+ 3 mois offerts</span>
                         </div>
                       </div>
                       <div class="space-y-3 py-5 md:py-10">
@@ -312,10 +312,10 @@
                   </div>
                 </div>
                 <div class="bg-white text-center rounded-t-2xl rounded-b-2xl shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] h-full 
-                overflow-hidden relative hover:-translate-y-2 duration-500">
+                overflow-hidden relative hover:-translate-y-2 duration-500 max-w-[500px]">
                   <!-- price header-->
                   <div class="py-3 bg-rich-black rounded-t-2xl">
-                    <h6 class="text-lg text-white font-semibold">Serveur Cloud S</h6>
+                    <h6 class="text-xl text-white font-semibold">Serveur Cloud S</h6>
                   </div>
                   <!-- price body-->
                   <div class="py-6 md:py-12 px-5">
@@ -323,21 +323,21 @@
                         <h3 class="text-h3 font-bold text-rich-black">33.31€ /mois</h3>
                         <div>
                           <p class="text-lg md:text-xl text-dark font-medium">36 mois pour 1349.00€ HT</p>
-                          <span class="text-lg text-red underline">+ 24 mois offerts</span>
+                          <span class="text-base text-red underline">+ 24 mois offerts</span>
                         </div>
                       </div>
                       <div class="space-y-3 border-b border-[#D9D9D9] py-5 md:py-10">
                         <h3 class="text-h3 font-bold text-rich-black">39.54€ /mois</h3>
                         <div>
                           <p class="text-lg md:text-xl text-dark font-medium">24 mois pour 949.00€ HT</p>
-                          <span class="text-lg text-red underline">+ 12 mois offerts</span>
+                          <span class="text-base text-red underline">+ 12 mois offerts</span>
                         </div>
                       </div>
                       <div class="space-y-3 border-b border-[#D9D9D9] py-5 md:py-10">
                         <h3 class="text-h3 font-bold text-rich-black">58.25€ /mois</h3>
                         <div>
                           <p class="text-lg md:text-xl text-dark font-medium">12 mois pour 699.00€ HT</p>
-                          <span class="text-lg text-red underline">+ 3 mois offerts</span>
+                          <span class="text-base text-red underline">+ 3 mois offerts</span>
                         </div>
                       </div>
                       <div class="space-y-3 py-5 md:py-10">
@@ -384,10 +384,10 @@
                   </div>
                 </div>
                 <div class="bg-white text-center rounded-t-2xl rounded-b-2xl shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] h-full 
-                overflow-hidden relative hover:-translate-y-2 duration-500">
+                overflow-hidden relative hover:-translate-y-2 duration-500 max-w-[500px]">
                   <!-- price header-->
                   <div class="py-3 bg-rich-black rounded-t-2xl">
-                    <h6 class="text-lg text-white font-semibold">Serveur Cloud S</h6>
+                    <h6 class="text-xl text-white font-semibold">Serveur Cloud S</h6>
                   </div>
                   <!-- price body-->
                   <div class="py-6 md:py-12 px-5">
@@ -395,21 +395,21 @@
                         <h3 class="text-h3 font-bold text-rich-black">33.31€ /mois</h3>
                         <div>
                           <p class="text-lg md:text-xl text-dark font-medium">36 mois pour 1349.00€ HT</p>
-                          <span class="text-lg text-red underline">+ 24 mois offerts</span>
+                          <span class="text-base text-red underline">+ 24 mois offerts</span>
                         </div>
                       </div>
                       <div class="space-y-3 border-b border-[#D9D9D9] py-5 md:py-10">
                         <h3 class="text-h3 font-bold text-rich-black">39.54€ /mois</h3>
                         <div>
                           <p class="text-lg md:text-xl text-dark font-medium">24 mois pour 949.00€ HT</p>
-                          <span class="text-lg text-red underline">+ 12 mois offerts</span>
+                          <span class="text-base text-red underline">+ 12 mois offerts</span>
                         </div>
                       </div>
                       <div class="space-y-3 border-b border-[#D9D9D9] py-5 md:py-10">
                         <h3 class="text-h3 font-bold text-rich-black">58.25€ /mois</h3>
                         <div>
                           <p class="text-lg md:text-xl text-dark font-medium">12 mois pour 699.00€ HT</p>
-                          <span class="text-lg text-red underline">+ 3 mois offerts</span>
+                          <span class="text-base text-red underline">+ 3 mois offerts</span>
                         </div>
                       </div>
                       <div class="space-y-3 py-5 md:py-10">
@@ -456,148 +456,23 @@
                   <a href="#" class="text-white border-white border-2 btn-common hover:bg-white hover:text-red hover:-translate-y-2 duration-500 absolute">Contactez-nous</a>
                 </div>
               </div>
-              <h2 class="text-h2 font-bold text-rich-black my-6 md:my-16 text-center">Comparaison des Fonctionnalités</h2>
-              <!--<div class="bg-white px-6 md:px-12 py-6 md:py-12 rounded-2xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.25)]">
-                <div class="overflow-x-auto">
-                    <div class="grid grid-cols-4  pb-3">
-                        <div></div>
-                        <h6 class="text-lg md:text-xl text-center text-red font-semibold">Serveur Cloud S</h6>
-                        <h6 class="text-lg md:text-xl text-center text-yellow-500 font-semibold">Serveur Cloud M</h6>
-                        <h6 class="text-lg md:text-xl text-center text-dark font-semibold">Serveur Cloud L</h6>
-                    </div>
-                    <h4 class="border-b border-[#D9D9D980] py-4 text-h4 font-semibold">Cloud & Sécurité</h4>
-                    <div class="grid grid-cols-4 border-b border-[#D9D9D980] py-4 items-center">
-                      <div>
-                        <p class="text-base font-semibold text-dark mb-2">Espace de stockage Cloud</p>
-                        <p class="text-sm text-dark">Virtualisation VMware - REST API - Trafic Illimité 
-                        Processeur Intel Xeon</p>
-                      </div>
-                      <p class="text-center text-dark text-base">10GB</p>
-                      <p class="text-center text-dark text-base">30GB</p>
-                      <p class="text-center text-dark text-base">120GB</p>
-                    </div>
-
-                    <div class="grid grid-cols-4 border-b border-[#D9D9D980] py-4 items-center">
-                        <div>
-                          <p class="text-base font-semibold text-dark mb-2">MSS Security Software</p>
-                          <p class="text-sm text-dark">Suite Sécurité Intégrale qui protège votre identité numérique sur internet</p>
-                        </div>
-                        <p class="text-center text-red text-lg">✔</p>
-                        <p class="text-center text-yellow-500 text-lg">✔</p>
-                        <p class="text-center text-dark text-lg">✔</p>
-                    </div>
-
-                    <div class="grid grid-cols-4 border-b border-[#D9D9D980] py-4 items-center">
-                        <div>
-                          <p class="text-base font-semibold text-dark mb-2">MSS Intelligard</p>
-                          <p class="text-sm text-dark">Protection préventive contre les cyberattaque & la collecte des données personnelles</p>
-                        </div>
-                        <div class="block"></div>
-                        <div class="block"></div>
-                        <p class="text-center text-dark text-lg">✔</p>
-                    </div>
-                    <h4 class="border-b border-[#D9D9D980] py-4 text-h4 font-semibold mt-6">Assistance Clients</h4>
-                    <div class="grid grid-cols-4 border-b border-[#D9D9D980] py-4 items-center">
-                      <div>
-                        <p class="text-base font-semibold text-dark mb-2">Heures d'ouvertures</p>
-                        <p class="text-sm text-dark">Du lundi au vendredi de 10h00 à 18h00</p>
-                      </div>
-                      <p class="text-center text-red text-lg">✔</p>
-                      <p class="text-center text-yellow-500 text-lg">✔</p>
-                      <p class="text-center text-dark text-lg">✔</p>
-                    </div>
-
-                    <div class="grid grid-cols-4 border-b border-[#D9D9D980] py-4 items-center">
-                        <div>
-                          <p class="text-base font-semibold text-dark mb-2">Aide & Assistance</p>
-                        </div>
-                        <p class="text-center text-dark text-base">3 h/mois</p>
-                        <p class="text-center text-dark text-base">5 h/mois</p>
-                        <p class="text-center text-dark text-base">Illimitées</p>
-                    </div>
-                    <div class="grid grid-cols-4 border-b border-[#D9D9D980] py-4 items-center">
-                        <div>
-                          <p class="text-base font-semibold text-dark mb-2">Temps de retour</p>
-                        </div>
-                        <p class="text-center text-dark text-base">24 heures</p>
-                        <p class="text-center text-dark text-base">3 heures</p>
-                        <p class="text-center text-dark text-base">Illimitées</p>
-                    </div>
-
-                    <div class="grid grid-cols-4 border-b border-[#D9D9D980] py-4 items-center">
-                        <div>
-                          <p class="text-base font-semibold text-dark mb-2">Suivi Personalisé</p>
-                          <p class="text-sm text-dark">Toujours le même personnel IT à votre disposition durant toute la durée de votre abonnement afin de vous offrir un service personnalisé & rapide,</p>
-                        </div>
-                        <div class="block"></div>
-                        <div class="block"></div>
-                        <p class="text-center text-dark text-lg">✔</p>
-                    </div>
-                    <h4 class="border-b border-[#D9D9D980] py-4 text-h4 font-semibold mt-6">Services</h4>
-                    <div class="grid grid-cols-4 border-b border-[#D9D9D980] py-4 items-center">
-                      <div>
-                        <p class="text-base font-semibold text-dark mb-2">Mises à jour & Vérifications</p>
-                        <p class="text-sm text-dark">Garantie de mises à jour & Maintenance proactive
-                        pour maintenir le bon fonctionnement de l’ordinateur</p>
-                      </div>
-                      <p class="text-center text-dark text-base">Annuelles</p>
-                      <p class="text-center text-dark text-base">Bimestrielles</p>
-                      <p class="text-center text-dark text-base">Trimestrielles</p>
-                    </div>
-
-                    <div class="grid grid-cols-4 border-b border-[#D9D9D980] py-4 items-center">
-                        <div>
-                          <p class="text-base font-semibold text-dark mb-2">Nettoyage</p>
-                        </div>
-                        <p class="text-center text-red text-lg">✔</p>
-                        <p class="text-center text-yellow-500 text-lg">✔</p>
-                        <p class="text-center text-dark text-lg">✔</p>
-                    </div>
-                    <div class="grid grid-cols-4 border-b border-[#D9D9D980] py-4 items-center">
-                        <div>
-                          <p class="text-base font-semibold text-dark mb-2">Optimisation</p>
-                        </div>
-                        <p class="text-center text-red text-lg">✔</p>
-                        <p class="text-center text-yellow-500 text-lg">✔</p>
-                        <p class="text-center text-dark text-lg">✔</p>
-                    </div>
-
-                    <div class="grid grid-cols-4 border-b border-[#D9D9D980] py-4 items-center">
-                        <div>
-                          <p class="text-base font-semibold text-dark mb-2">Actualisation de l'OS</p>
-                        </div>
-                        <div class="block"></div>
-                        <p class="text-center text-yellow-500 text-lg">✔</p>
-                        <p class="text-center text-dark text-lg">✔</p>
-                    </div>
-
-                    <div class="grid grid-cols-4 border-b border-[#D9D9D980] py-4 items-center">
-                        <div>
-                          <p class="text-base font-semibold text-dark mb-2">Souscription Transférable</p>
-                          <p class="text-sm text-dark">Transférez votre abonnement à un autre ordinateur rapidement & facilement</p>
-                        </div>
-                        <div class="block"></div>
-                        <p class="text-center text-yellow-500 text-lg">✔</p>
-                        <p class="text-center text-dark text-lg">✔</p>
-                    </div>
-                </div>
-              </div> -->
+              <h2 class="text-h2 font-bold text-rich-black my-16 text-center">Comparaison des Fonctionnalités</h2>
               <div class="bg-white px-6 md:px-12 py-6 md:py-12 rounded-2xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.25)] overflow-x-auto">
                   <table class="min-w-full border-collapse">
                     <!-- Table Header -->
-                    <div class="grid grid-cols-4  pb-3">
-                        <div></div>
-                        <h6 class="text-base sm:text-lg md:text-xl text-center text-red font-semibold">Serveur Cloud S</h6>
-                        <h6 class="text-base sm:text-lg md:text-xl text-center text-yellow-500 font-semibold">Serveur Cloud M</h6>
-                        <h6 class="text-base sm:text-lg md:text-xl text-center text-dark font-semibold">Serveur Cloud L</h6>
-                    </div>
+                    <thead>
+                        <th></th>
+                        <th class="text-base sm:text-lg md:text-xl text-center text-red font-semibold p-4">Serveur Cloud S</th>
+                        <th class="text-base sm:text-lg md:text-xl text-center text-yellow-500 font-semibold p-4">Serveur Cloud M</th>
+                        <th class="text-base sm:text-lg md:text-xl text-center text-dark font-semibold p-4">Serveur Cloud L</th>
+                    </thead>
 
                     <!-- Cloud & Sécurité Section -->
-                    <tbody>
+                    <tbody class="divide-y divide-[#D9D9D980]">
                       <tr>
                         <td colspan="4" class="border-b border-[#D9D9D980] py-4 font-semibold text-h4">Cloud & Sécurité</td>
                       </tr>
-                      <tr class="border-b border-[#D9D9D980]">
+                      <tr>
                         <td class="lg:w-80 p-4 px-0">
                           <p class="text-base font-semibold text-dark mb-2">Espace de stockage Cloud</p>
                           <p class="text-sm text-dark">Virtualisation VMware - REST API - Trafic Illimité Processeur Intel Xeon</p>
@@ -606,7 +481,7 @@
                         <td class="text-center text-dark text-base p-4">30GB</td>
                         <td class="text-center text-dark text-base p-4">120GB</td>
                       </tr>
-                      <tr class="border-b border-[#D9D9D980]">
+                      <tr>
                         <td class="p-4 px-0">
                           <p class="text-base font-semibold text-dark mb-2">MSS Security Software</p>
                           <p class="text-sm text-dark">Suite Sécurité Intégrale qui protège votre identité numérique sur internet</p>
@@ -615,7 +490,7 @@
                         <td class="text-center text-yellow-500 text-lg p-4">✔</td>
                         <td class="text-center text-dark text-lg p-4">✔</td>
                       </tr>
-                      <tr class="border-b border-[#D9D9D980]">
+                      <tr>
                         <td class="p-4 px-0">
                           <p class="text-base font-semibold text-dark mb-2">MSS Intelligard</p>
                           <p class="text-sm text-dark">Protection préventive contre les cyberattaque & la collecte des données personnelles</p>
@@ -627,9 +502,9 @@
 
                       <!-- Assistance Clients Section -->
                       <tr>
-                        <td colspan="4" class="border-b border-[#D9D9D980] py-4 font-semibold text-h4 mt-6">Assistance Clients</td>
+                        <td colspan="4" class="border-b border-[#D9D9D980] py-4 font-semibold text-h4 pt-10">Assistance Clients</td>
                       </tr>
-                      <tr class="border-b border-[#D9D9D980]">
+                      <tr>
                         <td class="p-4 px-0">
                           <p class="text-base font-semibold text-dark mb-2">Heures d'ouvertures</p>
                           <p class="text-sm text-dark">Du lundi au vendredi de 10h00 à 18h00</p>
@@ -638,7 +513,7 @@
                         <td class="text-center text-yellow-500 text-lg p-4">✔</td>
                         <td class="text-center text-dark text-lg p-4">✔</td>
                       </tr>
-                      <tr class="border-b border-[#D9D9D980]">
+                      <tr>
                         <td class="p-4 px-0">
                           <p class="text-base font-semibold text-dark mb-2">Aide & Assistance</p>
                         </td>
@@ -646,7 +521,7 @@
                         <td class="text-center text-dark text-base p-4">5 h/mois</td>
                         <td class="text-center text-dark text-base p-4">Illimitées</td>
                       </tr>
-                      <tr class="border-b border-[#D9D9D980]">
+                      <tr>
                         <td class="p-4 px-0">
                           <p class="text-base font-semibold text-dark mb-2">Temps de retour</p>
                         </td>
@@ -654,7 +529,7 @@
                         <td class="text-center text-dark text-base p-4">3 heures</td>
                         <td class="text-center text-dark text-base p-4">Illimitées</td>
                       </tr>
-                      <tr class="border-b border-[#D9D9D980]">
+                      <tr>
                         <td class="p-4 px-0">
                           <p class="text-base font-semibold text-dark mb-2">Suivi Personalisé</p>
                           <p class="text-sm text-dark">Toujours le même personnel IT à votre disposition durant toute la durée de votre abonnement afin de vous offrir un service personnalisé & rapide,</p>
@@ -666,9 +541,9 @@
 
                       <!-- Services Section -->
                       <tr>
-                        <td colspan="4" class="border-b border-[#D9D9D980] py-4 font-semibold text-h4 mt-6">Services</td>
+                        <td colspan="4" class="order-b border-[#D9D9D980] py-4 font-semibold text-h4 pt-10">Services</td>
                       </tr>
-                      <tr class="border-b border-[#D9D9D980]">
+                      <tr>
                         <td class="p-4 px-0">
                           <p class="text-base font-semibold text-dark mb-2">Mises à jour & Vérifications</p>
                           <p class="text-sm text-dark">Garantie de mises à jour & Maintenance proactive pour maintenir le bon fonctionnement de l’ordinateur</p>
@@ -677,7 +552,7 @@
                         <td class="text-center text-dark text-base p-4">Bimestrielles</td>
                         <td class="text-center text-dark text-base p-4">Trimestrielles</td>
                       </tr>
-                      <tr class="border-b border-[#D9D9D980]">
+                      <tr>
                         <td class="p-4 px-0">
                           <p class="text-base font-semibold text-dark mb-2">Nettoyage</p>
                         </td>
@@ -685,7 +560,7 @@
                         <td class="text-center text-yellow-500 text-lg p-4">✔</td>
                         <td class="text-center text-dark text-lg p-4">✔</td>
                       </tr>
-                      <tr class="border-b border-[#D9D9D980]">
+                      <tr>
                         <td class="p-4 px-0">
                           <p class="text-base font-semibold text-dark mb-2">Optimisation</p>
                         </td>
@@ -693,7 +568,7 @@
                         <td class="text-center text-yellow-500 text-lg p-4">✔</td>
                         <td class="text-center text-dark text-lg p-4">✔</td>
                       </tr>
-                      <tr class="border-b border-[#D9D9D980]">
+                      <tr>
                         <td class="p-4 px-0">
                           <p class="text-base font-semibold text-dark mb-2">Actualisation de l'OS</p>
                         </td>
@@ -701,7 +576,7 @@
                         <td class="text-center text-yellow-500 text-lg p-4">✔</td>
                         <td class="text-center text-dark text-lg p-4">✔</td>
                       </tr>
-                      <tr class="border-b border-[#D9D9D980]">
+                      <tr>
                         <td class="p-4 px-0">
                           <p class="text-base font-semibold text-dark mb-2">Souscription Transférable</p>
                           <p class="text-sm text-dark">Transférez votre abonnement à un autre ordinateur rapidement & facilement</p>
