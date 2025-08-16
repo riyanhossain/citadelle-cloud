@@ -17,12 +17,12 @@
           <nav class="main-container flex items-center justify-between">
               <!-- Logo -->
               <a href="#">
-                  <img 
-                      src="/images/LOGO_MSS.webp" 
-                      :style="scrolled ? 'width: 90px' : 'width: 110px'" 
-                      alt="Logo" 
-                      class="transition-all duration-300"
-                  />
+                <img 
+                  src="/images/LOGO_MSS.webp" 
+                  alt="Logo" 
+                  :class="scrolled ? 'w-[90px]' : 'w-[110px]'" 
+                  class="transition-all duration-300"
+                />
               </a>
 
               <!-- Desktop Menu -->
@@ -62,7 +62,7 @@
               x-transition:leave="transform transition ease-in duration-500"
               x-transition:leave-start="translate-x-0"
               x-transition:leave-end="translate-x-full"
-              class="fixed top-0 right-0 w-full h-full bg-white shadow-lg z-50 p-6"
+              class="fixed top-0 right-0 size-full bg-white shadow-lg z-50 p-6"
           >
               <!-- Close Button -->
               <button 
@@ -116,14 +116,14 @@
                 <h6 class="text-center text-base sm:text-lg text-rich-black font-medium max-w-[750px]">Nous fournissons de l´aide et une solution adaptée pour tous les appareils executant ces systèmes d´exploitation :</h6>
               </div>
               <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-[900px] m-auto items-center">
-                <div class="bg-white rounded-3xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.25)] px-8 py-6">
-                  <img src="/icon/icon-1.PNG" class="w-[50px] h-[50px] md:w-[100px] md:h-[100px] m-auto" alt="icon-1"/>
+                <div class="bg-white rounded-3xl shadow-custom px-8 py-6">
+                  <img src="/icon/icon-1.PNG" class="size-[50px] md:size-[100px] m-auto" alt="icon-1"/>
                 </div>
-                <div class="bg-white rounded-3xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.25)] px-8 py-6">
-                  <img src="/icon/icon-2.PNG" class="w-[50px] h-[50px] md:w-[100px] md:h-[100px] m-auto" alt="icon-1"/>
+                <div class="bg-white rounded-3xl shadow-custom px-8 py-6">
+                  <img src="/icon/icon-2.PNG" class="size-[50px] md:size-[100px] m-auto" alt="icon-1"/>
                 </div>
-                <div class="bg-white rounded-3xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.25)] px-8 py-6">
-                  <img src="/icon/icon-3.PNG" class="w-[50px] h-[50px] md:w-[100px] md:h-[100px] m-auto" alt="icon-1"/>
+                <div class="bg-white rounded-3xl shadow-custom px-8 py-6">
+                  <img src="/icon/icon-3.PNG" class="size-[50px] md:size-[100px] m-auto" alt="icon-1"/>
                 </div>
               </div>
            </div>
@@ -243,7 +243,7 @@
               </div>
             </div>
             <div class="absolute inset-0 flex justify-center items-center z-[-1]">
-              <img src="/images/perdre-vos-donnees-bg_img.webp" class="w-[90%] lg:w-full lg:max-w-[calc(100%-9rem)] h-full object-cover rounded-2xl shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]" alt=""/>
+              <img src="/images/perdre-vos-donnees-bg_img.webp" class="w-[90%] lg:w-full lg:max-w-[calc(100%-9rem)] h-full object-cover rounded-2xl shadow-custom" alt=""/>
             </div>
         </section>
         <!-- Nos Formules -->
@@ -251,7 +251,7 @@
            <div class="main-container relative z-10">
                <h2 class="text-h2 font-bold text-white text-center mb-8 md:mb-16">Nos Formules</h2>
               <div class="grid grid-cols-1 md:grid-cols-3 gap-6 -mb-[360px]">
-                <div class="bg-white text-center rounded-t-2xl rounded-b-2xl shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] h-full 
+                <div class="bg-white text-center rounded-t-2xl rounded-b-2xl shadow-custom h-full 
                 overflow-hidden relative hover:-translate-y-2 duration-500 max-w-[500px]">
                   <!-- price header-->
                   <div class="py-3 bg-rich-black rounded-t-2xl">
@@ -311,7 +311,7 @@
                     <a href="#" class="secondary-btn btn-common flex justify-center">Souscrire</a>
                   </div>
                 </div>
-                <div class="bg-white text-center rounded-t-2xl rounded-b-2xl shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] h-full 
+                <div class="bg-white text-center rounded-t-2xl rounded-b-2xl shadow-custom h-full 
                 overflow-hidden relative hover:-translate-y-2 duration-500 max-w-[500px]">
                   <!-- price header-->
                   <div class="py-3 bg-rich-black rounded-t-2xl">
@@ -383,7 +383,7 @@
                     <a href="#" class="primary-btn btn-common flex justify-center">Souscrire</a>
                   </div>
                 </div>
-                <div class="bg-white text-center rounded-t-2xl rounded-b-2xl shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] h-full 
+                <div class="bg-white text-center rounded-t-2xl rounded-b-2xl shadow-custom h-full 
                 overflow-hidden relative hover:-translate-y-2 duration-500 max-w-[500px]">
                   <!-- price header-->
                   <div class="py-3 bg-rich-black rounded-t-2xl">
@@ -445,19 +445,19 @@
                 </div>
               </div>
            </div>
-           <img src="/images/Nos-Formules_bg.webp" class="absolute inset-0 w-full  h-full" alt=""/>
+           <img src="/images/Nos-Formules_bg.webp" class="absolute inset-0 size-full" alt=""/>
         </section>
         <!-- Besoin d'un plan personnalisé -->
         <section id="fonctionnalités" class="relative py-8 md:py-16 mt-[330px]">
            <div class="main-container">
-              <div class="bg-[linear-gradient(90deg,#F35255_0%,#FEBF40_100%)] px-6 py-24 rounded-2xl shadow text-center">
+              <div class="bg-[linear-gradient(90deg,#F35255_0%,#FEBF40_100%)] px-6 py-24 rounded-2xl shadow-custom text-center">
                 <h2 class="text-h2 font-semibold text-white mb-8">Besoin d'un plan personnalisé ?</h2>
                 <div class="flex justify-center">
                   <a href="#" class="text-white border-white border-2 btn-common hover:bg-white hover:text-red hover:-translate-y-2 duration-500 absolute">Contactez-nous</a>
                 </div>
               </div>
               <h2 class="text-h2 font-bold text-rich-black my-16 text-center">Comparaison des Fonctionnalités</h2>
-              <div class="bg-white px-6 md:px-12 py-6 md:py-12 rounded-2xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.25)] overflow-x-auto">
+              <div class="bg-white px-6 md:px-12 py-6 md:py-12 rounded-2xl shadow-custom overflow-x-auto">
                   <table class="min-w-full border-collapse">
                     <!-- Table Header -->
                     <thead>
@@ -589,7 +589,7 @@
                   </table>
               </div>
            </div>
-           <img src="/images/gradient-right-circle.webp" class="absolute right-0 top-0 h-full w-auto object-contain pointer-events-none select-none -z-1" alt="gradient-right-circle">
+           <img src="/images/gradient-right-circle.webp" class="absolute right-0 top-0 h-full w-auto object-contain pointer-events-none select-none -z-10" alt="gradient-right-circle">
         </section> 
         <!-- Fonctionnalités -->
         <section id="solutions" class="relative py-8 md:py-16">
